@@ -39,6 +39,20 @@ class ModularSchedule extends Component{
                     start: '08:00',
                     end: '17:00',
                 }
+            },
+            5: {
+                available: 'full',
+                partial_time: {
+                    start: '08:00',
+                    end: '17:00',
+                }
+            },
+            6: {
+                available: 'full',
+                partial_time: {
+                    start: '08:00',
+                    end: '17:00',
+                }
             }
         }
     }
@@ -67,8 +81,6 @@ class ModularSchedule extends Component{
             [day]: day_state
         })
     }
-
-
 
     render = () => {
         console.log(this.state);

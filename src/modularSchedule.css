@@ -1,7 +1,7 @@
 .day-container{
     display: flex;
     border: 1px solid black;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -21,7 +21,6 @@ select{
 }
 
 .availability-container{
-    flex: 1;
     margin: 1rem 0rem 1rem 1rem;
 }
 
