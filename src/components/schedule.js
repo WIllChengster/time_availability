@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../schedule.css'
-import moment from 'moment'
 
 
 
