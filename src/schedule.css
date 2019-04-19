@@ -1,5 +1,6 @@
 .schedule_container{
-    /* display: flex; */
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .text-center {
@@ -30,7 +31,16 @@
 
 .hour_column.title > .box{
     border-right: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+.hour_column.title > .box > p {
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+}
+
 
 .hours_container{
     display: flex;
@@ -48,12 +58,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.hour_column > .box > p {
-    margin: 0;
-    text-align: center;
-    margin-top: 50px;
 }
 
 .hour_column.playable > .box {
