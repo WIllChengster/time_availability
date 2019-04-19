@@ -2,51 +2,60 @@
     /* display: flex; */
 }
 
+.text-center {
+    text-align: center;
+}
+
+
 .days_container {
     display: flex;
     border: 1px solid black;
     margin: -1px;
 }
 
-.day {
+
+
+.box {
     width: 100px;
     height: 50px;
-    border-left: 1px solid black;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: -1px;
     box-sizing: border-box;
     text-align: center;
-    margin-left: -1px;
 }
 
-.text-center {
-    text-align: center;
+.days_container > .box{
+    border-right: 1px solid black;
+}
+
+.hour_column.title > .box{
+    border-right: 1px solid black;
 }
 
 .hours_container{
     display: flex;
-    flex-direction: column;
+    border-left:1px solid black;
+    margin-left: -1px
 }
 
-.hour_title {
+.hour_column {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
 
-.hour_title > div {
+.hour_column > .box {
     display: flex;
-    width: 100px;
-    height: 50px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: -1px;
-    box-sizing: border-box;
     align-items: center;
     justify-content: center;
 }
 
-.hour_title > div > p {
+.hour_column > .box > p {
     margin: 0;
     text-align: center;
-    
+    margin-top: 50px;
+}
+
+.hour_column.playable > .box {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
